@@ -1,0 +1,19 @@
+package com.schoolportal.backend.model;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
+@Entity
+@Table(name = "student_activities")
+@Data
+public class StudentActivity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    private String studentEmail;
+    private String activityName; // e.g., "Robotics Club", "Basketball Team"
+    private String category;     // "SPORTS", "ROBOTICS", "ARTS"
+    private String proficiencyLevel; // "Novice", "Intermediate", "Advanced"
+    private String status;       // "Enrolled", "Active", "Completed"
+}

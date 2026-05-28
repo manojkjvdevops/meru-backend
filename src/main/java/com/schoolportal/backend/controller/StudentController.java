@@ -2,7 +2,8 @@ package com.schoolportal.backend.controller;
 
 import com.schoolportal.backend.dto.StudentDashboardDto;
 import com.schoolportal.backend.model.*;
-import com.schoolportal.backend.repository.*;
+import com.schoolportal.backend.repository.*; // 👈 THIS IS THE CRUCIAL LINE COVERING YOUR REPOSITORIES
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
